@@ -48,7 +48,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
-            <div class="navbar-nav ms-auto">
+            <div class="navbar-nav ms-auto tutup">
               <a class="nav-link" href="#home">Home</a>
               <a class="nav-link" href="#info">Info</a>
               <a class="nav-link" href="#story">Story</a>
@@ -241,42 +241,42 @@
 
         <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
           <div class="col mt-3">
-            <a href="https://picsum.photos/id/311/1200/768">
+            <a href="https://picsum.photos/id/311/1200/768" data-toggle="lightbox" data-gallery="example-gallery">
               <img src="https://picsum.photos/id/311/300/400" alt="RN 1" class="img-fluid w-100 rounded">
             </a>
           </div>
           <div class="col mt-3">
-            <a href="https://picsum.photos/id/312/1200/768">
+            <a href="https://picsum.photos/id/312/1200/768" data-toggle="lightbox" data-gallery="example-gallery">
               <img src="https://picsum.photos/id/312/300/400" alt="RN 2" class="img-fluid w-100 rounded">
             </a>
           </div>
           <div class="col mt-3">
-            <a href="https://picsum.photos/id/313/1200/768">
+            <a href="https://picsum.photos/id/313/1200/768" data-toggle="lightbox" data-gallery="example-gallery">
               <img src="https://picsum.photos/id/313/300/400" alt="RN 3" class="img-fluid w-100 rounded">
             </a>
           </div>
           <div class="col mt-3">
-            <a href="https://picsum.photos/id/314/1200/768">
+            <a href="https://picsum.photos/id/314/1200/768" data-toggle="lightbox" data-gallery="example-gallery">
               <img src="https://picsum.photos/id/314/300/400" alt="RN 4" class="img-fluid w-100 rounded">
             </a>
           </div>
           <div class="col mt-3">
-            <a href="https://picsum.photos/id/315/1200/768">
+            <a href="https://picsum.photos/id/315/1200/768" data-toggle="lightbox" data-gallery="example-gallery">
               <img src="https://picsum.photos/id/315/300/400" alt="RN 5" class="img-fluid w-100 rounded">
             </a>
           </div>
           <div class="col mt-3">
-            <a href="https://picsum.photos/id/316/1200/768">
+            <a href="https://picsum.photos/id/316/1200/768" data-toggle="lightbox" data-gallery="example-gallery">
               <img src="https://picsum.photos/id/316/300/400" alt="RN 6" class="img-fluid w-100 rounded">
             </a>
           </div>
           <div class="col mt-3">
-            <a href="https://picsum.photos/id/317/1200/768">
+            <a href="https://picsum.photos/id/317/1200/768" data-toggle="lightbox" data-gallery="example-gallery">
               <img src="https://picsum.photos/id/317/300/400" alt="RN 7" class="img-fluid w-100 rounded">
             </a>
           </div>
           <div class="col mt-3">
-            <a href="https://picsum.photos/id/318/1200/768">
+            <a href="https://picsum.photos/id/318/1200/768" data-toggle="lightbox" data-gallery="example-gallery">
               <img src="https://picsum.photos/id/318/300/400" alt="RN 8" class="img-fluid w-100 rounded">
             </a>
           </div>
@@ -403,13 +403,14 @@
       const offcanvas = document.querySelector('.offcanvas')
       const stickyTop = document.querySelector('.sticky-top')
 
-      offcanvas.addEventListener('shown.bs.offcanvas', function(){
+      offcanvas.addEventListener('show.bs.offcanvas', function(){
         stickyTop.style.overflow = 'visible';
       });
       
       offcanvas.addEventListener('hidden.bs.offcanvas', function(){
         stickyTop.style.overflow = 'hidden';
       });
+
 
 
     </script>
